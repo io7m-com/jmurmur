@@ -10,9 +10,17 @@
 
   <body>
     <subsection name="jmurmur">
-      <p>The <var>jmurmur</var> package provides an implementation
-      of the <a href="https://en.wikipedia.org/wiki/MurmurHash">Murmur</a>
-      hash function.
+      <p>
+        The <var>jmurmur</var> package provides an implementation
+        of the <a href="https://en.wikipedia.org/wiki/MurmurHash">Murmur</a>
+        hash function.
+      </p>
+    </subsection>
+    <subsection name="Features">
+      <ul>
+        <li>Full unit test coverage.</li>
+        <li>ISC license.</li>
+      </ul>
     </subsection>
   </body>
 

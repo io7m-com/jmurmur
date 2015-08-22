@@ -31,7 +31,7 @@ public final class NDocumentation
     try {
       final URL url =
         NDocumentation.class
-          .getResource("/com/io7m/jnoise/documentation/documentation.xml");
+          .getResource("/com/io7m/jmurmur/documentation/documentation.xml");
       assert url != null;
       final URI uri = url.toURI();
       assert uri != null;
