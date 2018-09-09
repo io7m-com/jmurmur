@@ -24,6 +24,7 @@
   <modules>
     <module>com.io7m.jmurmur.core</module>
     <module>com.io7m.jmurmur.documentation</module>
+    <module>com.io7m.jmurmur.tests</module>
   </modules>
 
   <properties>

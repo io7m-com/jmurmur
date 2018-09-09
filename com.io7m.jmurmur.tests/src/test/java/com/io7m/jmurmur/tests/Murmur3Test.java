@@ -1,10 +1,10 @@
 /*
  * Copyright © 2014 <code@io7m.com> http://io7m.com
- * 
+ *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
  * copyright notice and this permission notice appear in all copies.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
  * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
  * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY
@@ -14,7 +14,11 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-package com.io7m.jmurmur;
+package com.io7m.jmurmur.tests;
+
+import com.io7m.jmurmur.Murmur3;
+import org.junit.Assert;
+import org.junit.Test;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -22,12 +26,10 @@ import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
-import org.junit.Assert;
-import org.junit.Test;
-
-@SuppressWarnings("static-method") public final class Murmur3Test
+public final class Murmur3Test
 {
-  @Test public void testQuality()
+  @Test
+  public void testQuality()
   {
     final Random r = new Random();
     final Set<Integer> i = new HashSet<Integer>();
@@ -47,7 +49,8 @@ import org.junit.Test;
     Assert.assertTrue(c.size() >= i.size() - 10);
   }
 
-  @Test public void testQualitySeeded()
+  @Test
+  public void testQualitySeeded()
   {
     final Random r = new Random();
     final Set<Integer> i = new HashSet<Integer>();
@@ -68,7 +71,8 @@ import org.junit.Test;
     Assert.assertTrue(c.size() >= i.size() - 10);
   }
 
-  @Test public void testQualityLong()
+  @Test
+  public void testQualityLong()
   {
     final Random r = new Random();
     final Set<Long> i = new HashSet<Long>();
@@ -88,7 +92,8 @@ import org.junit.Test;
     Assert.assertTrue(c.size() >= i.size() - 250);
   }
 
-  @Test public void testQualitySeededLong()
+  @Test
+  public void testQualitySeededLong()
   {
     final Random r = new Random();
     final Set<Integer> i = new HashSet<Integer>();
@@ -109,7 +114,8 @@ import org.junit.Test;
     Assert.assertTrue(c.size() >= i.size() - 250);
   }
 
-  @Test public void testDistribution()
+  @Test
+  public void testDistribution()
   {
     final int r[] = new int[1024];
 
@@ -134,7 +140,8 @@ import org.junit.Test;
     System.out.println("Average collisions: " + sum / 1024);
   }
 
-  @Test public void testSeeded()
+  @Test
+  public void testSeeded()
   {
     for (int index = 0; index < 1024; ++index) {
       final int h0 = Murmur3.hashInt(index);
@@ -146,7 +153,8 @@ import org.junit.Test;
     }
   }
 
-  @Test public void testDistributionLong()
+  @Test
+  public void testDistributionLong()
   {
     final int r[] = new int[1024];
 
@@ -171,7 +179,8 @@ import org.junit.Test;
     System.out.println("Average collisions: " + sum / 1024);
   }
 
-  @Test public void testSeededLong()
+  @Test
+  public void testSeededLong()
   {
     for (int index = 0; index < 1024; ++index) {
       final int h0 = Murmur3.hashLong(index);
@@ -183,7 +192,8 @@ import org.junit.Test;
     }
   }
 
-  @Test public void testImage()
+  @Test
+  public void testImage()
     throws Exception
   {
     final File f0 = File.createTempFile("jmurmur-image-A-", ".dat");
