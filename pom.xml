@@ -59,9 +59,9 @@
 
   <distributionManagement>
     <site>
-      <id>GitHub</id>
-      <name>GitHub</name>
-      <url>http://io7m.github.io/jmurmur</url>
+      <id>io7m</id>
+      <name>io7m.com</name>
+      <url>http://www.io7m.com/software/jmurmur</url>
     </site>
     <repository>
       <id>sonatype-nexus-staging</id>
