@@ -14,5 +14,8 @@
  * IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-@com.io7m.jnull.NonNullByDefault package com.io7m.jmurmur;
+/**
+ * Murmur hash function (Core)
+ */
 
+package com.io7m.jmurmur;

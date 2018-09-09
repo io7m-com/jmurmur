@@ -18,16 +18,9 @@
   <url>http://io7m.github.io/jmurmur/</url>
 
   <properties>
-    <io7m.api.previousArtifactId>io7m-jmurmur-documentation</io7m.api.previousArtifactId>
     <io7m.api.japicmp.skip>true</io7m.api.japicmp.skip>
     <mdep.analyze.skip>true</mdep.analyze.skip>
   </properties>
-
-  <scm>
-    <url>${project.parent.scm.url}</url>
-    <connection>${project.parent.scm.connection}</connection>
-    <developerConnection>${project.parent.scm.developerConnection}</developerConnection>
-  </scm>
 
   <dependencies>
     <dependency>
