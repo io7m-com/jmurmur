@@ -28,6 +28,7 @@
   </modules>
 
   <properties>
+    <com.codacy.id>8b7cef58170b45a5960ccd48aa2ef99e</com.codacy.id>
     <io7m.api.previousVersion>1.1.0</io7m.api.previousVersion>
   </properties>
 
