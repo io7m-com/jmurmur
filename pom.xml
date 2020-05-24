@@ -63,7 +63,7 @@
     <site>
       <id>io7m</id>
       <name>io7m.com</name>
-      <url>http://www.io7m.com/software/jmurmur</url>
+      <url>https://www.io7m.com/software/jmurmur</url>
     </site>
     <repository>
       <id>sonatype-nexus-staging</id>
