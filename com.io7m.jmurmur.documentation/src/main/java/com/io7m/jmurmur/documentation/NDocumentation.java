@@ -31,6 +31,10 @@ public final class NDocumentation
 
   }
 
+  /**
+   * @return The documentation resource URL
+   */
+
   public static URI getDocumentationXMLLocation()
   {
     try {
