@@ -15,7 +15,7 @@
 
   <packaging>jar</packaging>
   <description>Murmur hash function (Core)</description>
-  <url>http://io7m.github.io/jmurmur</url>
+  <url>https://www.io7m.com/software/jmurmur</url>
   <name>com.io7m.jmurmur.core</name>
 
   <dependencies>

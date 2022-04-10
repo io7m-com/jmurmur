@@ -15,7 +15,7 @@
   <packaging>jar</packaging>
   <name>com.io7m.jmurmur.documentation</name>
   <description>Murmur hash function (Documentation)</description>
-  <url>http://io7m.github.io/jmurmur/</url>
+  <url>https://www.io7m.com/software/jmurmur</url>
 
   <properties>
     <mdep.analyze.skip>true</mdep.analyze.skip>
