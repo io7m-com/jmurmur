@@ -1,5 +1,5 @@
 /*
- * Copyright © 2014 <code@io7m.com> http://io7m.com
+ * Copyright © 2014 Mark Raynsford <code@io7m.com> https://www.io7m.com
  *
  * Permission to use, copy, modify, and/or distribute this software for any
  * purpose with or without fee is hereby granted, provided that the above
@@ -20,22 +20,21 @@ import com.io7m.junreachable.UnreachableCodeException;
 
 /**
  * <p>
- * An implementation of the public domain <a
- * href="https://en.wikipedia.org/wiki/MurmurHash">Murmur3</a> hash function.
+ * An implementation of the public domain <a href="https://en.wikipedia.org/wiki/MurmurHash">Murmur3</a>
+ * hash function.
  * </p>
  */
 
 public final class Murmur3
 {
-  private static final int C1           = 0xcc9e2d51;
-  private static final int C2           = 0x1b873593;
+  private static final int C1 = 0xcc9e2d51;
+  private static final int C2 = 0x1b873593;
 
   /**
-   * The default seed if one is not explicitly given. Just a large prime, no
-   * significance.
+   * The default seed if one is not explicitly given. Just a large prime, no significance.
    */
 
-  public static final int  DEFAULT_SEED = 0x12188101;
+  public static final int DEFAULT_SEED = 0x12188101;
 
   private static int finalMix(
     final int x,
@@ -52,11 +51,10 @@ public final class Murmur3
   }
 
   /**
-   * Hash the given integer value using the default seed (@link
-   * {@link #DEFAULT_SEED}).
+   * Hash the given integer value using the default seed (@link {@link #DEFAULT_SEED}).
    *
-   * @param x
-   *          The integer value.
+   * @param x The integer value.
+   *
    * @return A hash value.
    */
 
@@ -67,13 +65,11 @@ public final class Murmur3
   }
 
   /**
-   * Hash the given integer value using the given seed to randomize the
-   * results.
+   * Hash the given integer value using the given seed to randomize the results.
    *
-   * @param x
-   *          The integer value.
-   * @param seed
-   *          The seed value.
+   * @param x    The integer value.
+   * @param seed The seed value.
+   *
    * @return A hash value.
    */
 
@@ -87,11 +83,10 @@ public final class Murmur3
   }
 
   /**
-   * Hash the given long value using the default seed (@link
-   * {@link #DEFAULT_SEED}).
+   * Hash the given long value using the default seed (@link {@link #DEFAULT_SEED}).
    *
-   * @param x
-   *          The long value.
+   * @param x The long value.
+   *
    * @return A hash value.
    */
 
@@ -104,10 +99,9 @@ public final class Murmur3
   /**
    * Hash the given long value using the given seed to randomize the results.
    *
-   * @param x
-   *          The long value.
-   * @param seed
-   *          The seed value.
+   * @param x    The long value.
+   * @param seed The seed value.
+   *
    * @return A hash value.
    */
 

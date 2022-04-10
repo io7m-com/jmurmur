@@ -15,12 +15,15 @@
  */
 
 /**
- * Murmur hash function (Core)
+ * Documentation.
  */
 
-@Export
-@Version("2.0.0")
-package com.io7m.jmurmur;
+module com.io7m.jmurmur.documentation
+{
+  requires static org.osgi.annotation.bundle;
+  requires static org.osgi.annotation.versioning;
 
-import org.osgi.annotation.bundle.Export;
-import org.osgi.annotation.versioning.Version;
+  requires com.io7m.jmurmur.core;
+
+  exports com.io7m.jmurmur.documentation;
+}
