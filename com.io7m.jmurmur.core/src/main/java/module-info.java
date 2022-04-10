@@ -20,6 +20,9 @@
 
 module com.io7m.jmurmur.core
 {
+  requires static org.osgi.annotation.bundle;
+  requires static org.osgi.annotation.versioning;
+
   requires com.io7m.junreachable.core;
 
   exports com.io7m.jmurmur;

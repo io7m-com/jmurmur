@@ -18,4 +18,9 @@
  * Murmur hash function (Core)
  */
 
+@Export
+@Version("2.0.0")
 package com.io7m.jmurmur;
+
+import org.osgi.annotation.bundle.Export;
+import org.osgi.annotation.versioning.Version;
