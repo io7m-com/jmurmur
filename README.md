@@ -2,10 +2,10 @@ jmurmur
 ===
 
 [![Maven Central](https://img.shields.io/maven-central/v/com.io7m.jmurmur/com.io7m.jmurmur.svg?style=flat-square)](http://search.maven.org/#search%7Cga%7C1%7Cg%3A%22com.io7m.jmurmur%22)
-[![Maven Central (snapshot)](https://img.shields.io/nexus/s/https/s01.oss.sonatype.org/com.io7m.jmurmur/com.io7m.jmurmur.svg?style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/jmurmur/)
+[![Maven Central (snapshot)](https://img.shields.io/nexus/s/com.io7m.jmurmur/com.io7m.jmurmur?server=https%3A%2F%2Fs01.oss.sonatype.org&style=flat-square)](https://s01.oss.sonatype.org/content/repositories/snapshots/com/io7m/jmurmur/)
 [![Codecov](https://img.shields.io/codecov/c/github/io7m/jmurmur.svg?style=flat-square)](https://codecov.io/gh/io7m/jmurmur)
 
-![jmurmur](./src/site/resources/jmurmur.jpg?raw=true)
+![com.io7m.jmurmur](./src/site/resources/jmurmur.jpg?raw=true)
 
 | JVM | Platform | Status |
 |-----|----------|--------|
