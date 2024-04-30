@@ -18,6 +18,6 @@
     </c:release>
   </c:releases>
   <c:ticket-systems>
-    <c:ticket-system default="false" id="com.github.io7m.jmurmur" url="http://github.com/io7m/jmurmur/issues/"/>
+    <c:ticket-system default="false" id="com.github.io7m.jmurmur" url="http://www.github.com/io7m-com/jmurmur/issues/"/>
   </c:ticket-systems>
 </c:changelog>
