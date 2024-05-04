@@ -13,3 +13,26 @@ jmurmur
 | OpenJDK (Temurin) LTS | Linux | [![Build (OpenJDK (Temurin) LTS, Linux)](https://img.shields.io/github/actions/workflow/status/io7m-com/jmurmur/main.linux.temurin.lts.yml)](https://www.github.com/io7m-com/jmurmur/actions?query=workflow%3Amain.linux.temurin.lts)|
 | OpenJDK (Temurin) Current | Windows | [![Build (OpenJDK (Temurin) Current, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jmurmur/main.windows.temurin.current.yml)](https://www.github.com/io7m-com/jmurmur/actions?query=workflow%3Amain.windows.temurin.current)|
 | OpenJDK (Temurin) LTS | Windows | [![Build (OpenJDK (Temurin) LTS, Windows)](https://img.shields.io/github/actions/workflow/status/io7m-com/jmurmur/main.windows.temurin.lts.yml)](https://www.github.com/io7m-com/jmurmur/actions?query=workflow%3Amain.windows.temurin.lts)|
+
+## jmurmur
+
+A Java implementation of the [Murmur3](https://en.wikipedia.org/wiki/MurmurHash)
+hash function.
+
+## Features
+
+* Murmur3 hash function.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+```
+var a = Murmur3.hashInt(23);
+var b = Murmur3.hashIntWithSeed(300, 81238);
+var c = Murmur3.hashLong(23L);
+var d = Murmur3.hashLongWithSeed(300L, 81238L);
+```
+

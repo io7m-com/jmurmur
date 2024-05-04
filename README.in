@@ -1,0 +1,22 @@
+
+## jmurmur
+
+A Java implementation of the [Murmur3](https://en.wikipedia.org/wiki/MurmurHash)
+hash function.
+
+## Features
+
+* Murmur3 hash function.
+* High coverage test suite.
+* [OSGi-ready](https://www.osgi.org/)
+* [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
+* ISC license.
+
+## Usage
+
+```
+var a = Murmur3.hashInt(23);
+var b = Murmur3.hashIntWithSeed(300, 81238);
+var c = Murmur3.hashLong(23L);
+var d = Murmur3.hashLongWithSeed(300L, 81238L);
+```
