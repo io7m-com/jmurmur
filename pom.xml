@@ -10,12 +10,12 @@
   <parent>
     <groupId>com.io7m.primogenitor</groupId>
     <artifactId>com.io7m.primogenitor.full</artifactId>
-    <version>7.0.0</version>
+    <version>8.2.0</version>
   </parent>
 
   <groupId>com.io7m.jmurmur</groupId>
   <artifactId>com.io7m.jmurmur</artifactId>
-  <version>2.0.0</version>
+  <version>3.0.0</version>
 
   <packaging>pom</packaging>
   <name>com.io7m.jmurmur</name>
@@ -24,25 +24,26 @@
 
   <modules>
     <module>com.io7m.jmurmur.core</module>
-    <module>com.io7m.jmurmur.documentation</module>
     <module>com.io7m.jmurmur.tests</module>
   </modules>
 
   <properties>
-    <io7m.api.previousVersion>1.1.0</io7m.api.previousVersion>
+    <!-- Configuration. -->
+    <io7m.api.previousVersion>2.0.0</io7m.api.previousVersion>
+    <io7m.java.targetJavaVersion>21</io7m.java.targetJavaVersion>
   </properties>
 
   <licenses>
     <license>
-      <name>ISC License</name>
+      <name>ISC</name>
       <url>https://www.io7m.com/license/isc.txt</url>
     </license>
   </licenses>
 
   <scm>
-    <url>https://github.com/io7m/jmurmur</url>
-    <connection>scm:git:https://github.com/io7m/jmurmur</connection>
-    <developerConnection>scm:git:https://github.com/io7m/jmurmur</developerConnection>
+    <url>https://www.github.com/io7m-com/jmurmur</url>
+    <connection>scm:git:https://www.github.com/io7m-com/jmurmur</connection>
+    <developerConnection>scm:git:https://www.github.com/io7m-com/jmurmur</developerConnection>
   </scm>
 
   <developers>
@@ -55,7 +56,7 @@
   </developers>
 
   <issueManagement>
-    <url>http://github.com/io7m/jmurmur/issues</url>
+    <url>http://www.github.com/io7m-com/jmurmur/issues</url>
     <system>GitHub Issues</system>
   </issueManagement>
 
@@ -67,17 +68,17 @@
     </site>
     <repository>
       <id>sonatype-nexus-staging</id>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+      <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
     </repository>
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+      <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 
   <ciManagement>
     <system>GitHub Actions</system>
-    <url>https://github.com/jmurmur/actions</url>
+    <url>https://www.github.com/io7m-com/jmurmur/actions</url>
   </ciManagement>
 
   <prerequisites>
@@ -91,7 +92,7 @@
       <dependency>
         <groupId>com.io7m.junreachable</groupId>
         <artifactId>com.io7m.junreachable.core</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.2</version>
       </dependency>
 
       <dependency>
@@ -108,7 +109,7 @@
       <dependency>
         <groupId>com.io7m.primogenitor</groupId>
         <artifactId>com.io7m.primogenitor.support</artifactId>
-        <version>7.0.0</version>
+        <version>8.2.0</version>
       </dependency>
       <dependency>
         <groupId>junit</groupId>
@@ -126,13 +127,6 @@
   <build>
     <pluginManagement>
       <plugins>
-        <!-- jstructural plugin for generating documentation. -->
-        <plugin>
-          <groupId>com.io7m.jstructural</groupId>
-          <artifactId>io7m-jstructural-maven-plugin</artifactId>
-          <version>5.0.0</version>
-        </plugin>
-
         <!-- Spot bugs -->
         <plugin>
           <groupId>com.github.spotbugs</groupId>
