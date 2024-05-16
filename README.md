@@ -22,7 +22,9 @@ hash function.
 
 ## Features
 
-* Murmur3 hash function.
+* 32-bit and 64-bit versions of the
+  [MurmurHash3](https://en.wikipedia.org/wiki/MurmurHash) non-cryptographic
+  hash function.
 * High coverage test suite.
 * [OSGi-ready](https://www.osgi.org/)
 * [JPMS-ready](https://en.wikipedia.org/wiki/Java_Platform_Module_System)
